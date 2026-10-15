@@ -23,7 +23,7 @@ def calculate_profit(filename: str) -> None:
             earned_money = earned_money - cost
             matecoin_account = matecoin_account + bought
 
-        elif sold is not None:
+        if sold is not None:
             print("Sprzedaż kryptowaluty")
             sold = Decimal(sold)
             matecoin_price = Decimal(matecoin_price)
